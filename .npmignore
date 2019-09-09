@@ -1,0 +1,10 @@
+.circleci/
+.dependabot/
+coverage/
+dist/**/*.test*
+src/
+.gitignore
+.npmignore
+.prettierrc.yml
+.publishrc
+tsconfig*.json

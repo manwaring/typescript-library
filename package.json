@@ -1,0 +1,37 @@
+{
+  "name": "typescript-library-template",
+  "description": "A template for TypeScript libraries",
+  "version": "0.0.1",
+  "scripts": {
+    "publish-please-dry-run": "publish-please --dry-run",
+    "publish-please": "publish-please",
+    "prepublishOnly": "publish-please guard && npm run build",
+    "build": "rimraf dist && tsc -p ./tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.4",
+    "publish-please": "^5.5.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manwaring/typescript-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manwaring/typescript-library/issues"
+  },
+  "homepage": "https://github.com/manwaring/typescript-library#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "From Phillip with ♥",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "library",
+    "template"
+  ]
+}
